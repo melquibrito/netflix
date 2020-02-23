@@ -185,11 +185,12 @@ input#remember-me:focus {
     text-align: right;
     float: right;
     color: white;
+    text-decoration: none;
     opacity: 90%;
 }
 
-#help:visited {
-    color: white;
+#help:hover {
+    text-decoration: underline;
 }
 
 .label {
