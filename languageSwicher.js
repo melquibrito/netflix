@@ -86,3 +86,21 @@ const getSelectedLanguage = function () {
     let value = selector.options[selector.selectedIndex].value;
     return value;
 }
+
+const getBrowserLanguage = function () {
+    let lang = navigator.language || navigator.userLanguage;
+    lang = lang.slice(0, 2);
+    return lang;
+}
+
+const setSelectedLanguage = function (lang) {
+    lang = lang === 'pt' ? lang : 'en';
+    document.getElementById('language-selector').value = lang;
+}
+
+const setUpLanguage = function () {
+    let lang = getBrowserLanguage();
+    lang = lang.slice(0, 2);
+    loadTexts(lang);
+    setSelectedLanguage(lang);
+}

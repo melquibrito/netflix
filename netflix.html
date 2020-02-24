@@ -6,7 +6,7 @@
         <script src="./languageSwicher.js" type="text/javascript"></script>
         <link rel="stylesheet" href="netflixStyle.css">
     </head>
-    <body onload="loadTexts(getSelectedLanguage())">
+    <body onload="setUpLanguage()">
         <div class="background-wrapper">
             <img class="background" src="https://assets.nflxext.com/ffe/siteui/vlv3/5039d301-b891-47b2-b755-553e5c874395/e792888a-2c70-4a78-9dfd-b8a26e767ae4/BR-en-20200210-popsignuptwoweeks-perspective_alpha_website_small.jpg" srcset="https://assets.nflxext.com/ffe/siteui/vlv3/5039d301-b891-47b2-b755-553e5c874395/e792888a-2c70-4a78-9dfd-b8a26e767ae4/BR-en-20200210-popsignuptwoweeks-perspective_alpha_website_small.jpg 1000w, https://assets.nflxext.com/ffe/siteui/vlv3/5039d301-b891-47b2-b755-553e5c874395/e792888a-2c70-4a78-9dfd-b8a26e767ae4/BR-en-20200210-popsignuptwoweeks-perspective_alpha_website_medium.jpg 1500w, https://assets.nflxext.com/ffe/siteui/vlv3/5039d301-b891-47b2-b755-553e5c874395/e792888a-2c70-4a78-9dfd-b8a26e767ae4/BR-en-20200210-popsignuptwoweeks-perspective_alpha_website_large.jpg 1800w" alt>
         </div>
@@ -95,7 +95,7 @@
                         <div class="language-selector-boundaries">
                             <select name="language" id="language-selector" onchange="loadTexts(getSelectedLanguage())">
                                 <option value="en">English</option>
-                                <option value="pt" selected>Português</option>
+                                <option value="pt">Português</option>
                             </select>
                             <img class="globe-icon" src="https://climefish.eu/wp-content/uploads/sites/18/2017/08/icon-globe-400px.png">
                         </div>
