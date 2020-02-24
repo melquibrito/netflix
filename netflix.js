@@ -109,13 +109,3 @@ const showTermsOfUse = function () {
     document.getElementById('learn-more').style.visibility = 'hidden';
     document.getElementById('terms-of-use').style.visibility = 'visible';
 }
-
-exports = {
-    update, 
-    inputOnFocus, 
-    updateStyle, 
-    inputOnBlur, 
-    toggleCheckBox, 
-    checkBoxOnBlur,
-    showTermsOfUse
-}
