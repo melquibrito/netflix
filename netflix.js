@@ -77,7 +77,7 @@ const isValid = function (elementId) {
         return email_OK || phone_OK;
     }
     if(elementId === 'pwd-field') {
-        return (pwd.length > 3);
+        return (pwd.length > 3 && pwd.length < 61);
     }
     return false;
 }
