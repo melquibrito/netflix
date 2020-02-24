@@ -79,6 +79,7 @@ const loadTexts = function (lang) {
         document.getElementById(ids[i]).innerHTML = text[i];
     }
     document.getElementById('login-button').value = text[0];
+    document.lang = lang;
 }
 
 const getSelectedLanguage = function () {

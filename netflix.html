@@ -6,7 +6,7 @@
         <script src="./languageSwicher.js" type="text/javascript"></script>
         <link rel="stylesheet" href="netflixStyle.css">
     </head>
-    <body onload="setUpLanguage()">
+    <body onload="setUpLanguage()" onresize="updateView()">
         <div class="background-wrapper">
             <img class="background" src="https://assets.nflxext.com/ffe/siteui/vlv3/5039d301-b891-47b2-b755-553e5c874395/e792888a-2c70-4a78-9dfd-b8a26e767ae4/BR-en-20200210-popsignuptwoweeks-perspective_alpha_website_small.jpg" srcset="https://assets.nflxext.com/ffe/siteui/vlv3/5039d301-b891-47b2-b755-553e5c874395/e792888a-2c70-4a78-9dfd-b8a26e767ae4/BR-en-20200210-popsignuptwoweeks-perspective_alpha_website_small.jpg 1000w, https://assets.nflxext.com/ffe/siteui/vlv3/5039d301-b891-47b2-b755-553e5c874395/e792888a-2c70-4a78-9dfd-b8a26e767ae4/BR-en-20200210-popsignuptwoweeks-perspective_alpha_website_medium.jpg 1500w, https://assets.nflxext.com/ffe/siteui/vlv3/5039d301-b891-47b2-b755-553e5c874395/e792888a-2c70-4a78-9dfd-b8a26e767ae4/BR-en-20200210-popsignuptwoweeks-perspective_alpha_website_large.jpg 1800w" alt>
         </div>
@@ -77,7 +77,7 @@
                 </div>
             </div>
             <footer>
-                <div class="footer">
+                <div class="footer" id="footer">
                     <p class="footer-header">
                         <span id="footer-header"></span>
                         <a class="footer-link">0800-761-4632</a>

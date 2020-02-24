@@ -97,7 +97,6 @@ const checkBoxOnBlur = function () {
 const adjustLoginFormHeight = function () {
     let emailError = isHidden(document.getElementById('email-inputError')),
         pwdError = isHidden(document.getElementById('pwd-inputError'));
-    console.log(emailError, pwdError);
     document.getElementById('log-in-form').style.height = !emailError && !pwdError ? 'fit-content' : '340.667px';
 }
 
@@ -108,4 +107,30 @@ const isHidden = function (el) {
 const showTermsOfUse = function () {
     document.getElementById('learn-more').style.visibility = 'hidden';
     document.getElementById('terms-of-use').style.visibility = 'visible';
+}
+
+const updateView = function () {
+    let viewWidth = window.innerWidth;
+    if(viewWidth < 745) {
+        document.getElementById('app').style.backgroundColor = 'black';
+        document.getElementById('container').style.width = '87vw';
+        document.getElementById('container').style.left = '0';
+        document.getElementById('container').style.marginLeft = '0';
+        document.getElementById('container').style.padding = '60px 5vw 40px 5vw';
+        let inputFields = document.getElementsByClassName('field');
+        let width = (viewWidth*0.87) - 40;
+        for (let i = 0; i < inputFields.length; i++) {
+            document.getElementById(inputFields[i].id).style.width = `${width}px`;
+        };
+    } else {
+        document.getElementById('app').style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
+        document.getElementById('container').style.width = '314px';
+        document.getElementById('container').style.left = '50vw';
+        document.getElementById('container').style.marginLeft = '-233.5px';
+        document.getElementById('container').style.padding = '60px 68px 40px 68px';
+        let inputFields = document.getElementsByClassName('field');
+        for (let i = 0; i < inputFields.length; i++) {
+            document.getElementById(inputFields[i].id).style.width = '274px';
+        };
+    }
 }
